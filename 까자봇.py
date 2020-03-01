@@ -2,6 +2,7 @@ import asyncio
 import discord
 import time
 from random import *
+import os
 
 client = discord.Client()
 
@@ -119,5 +120,6 @@ async def on_message(message):
             await message.channel.send(embed = embed)
             t11 = time.time()
 
-client.run("NjgyMDMzMjcwNDAxMTM4ODAz.XlizuQ.upadlQTItGqjhj-TsY0mN9UeEAI")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
 
