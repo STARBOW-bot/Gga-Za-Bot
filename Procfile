@@ -1,1 +1,1 @@
-worker: python 까자봇.py
+worker: python GgaZaBot.py
