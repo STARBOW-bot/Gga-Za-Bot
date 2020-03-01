@@ -1,1 +1,1 @@
-worker: python GgaZaBot.py
+worker: python .py
