@@ -114,7 +114,7 @@ async def on_message(message):
             embed.add_field(name = '!키', value = '까자님의 키가 궁금하시다면?', inline=False)
             embed.add_field(name = '!까바자보', value = '||까바자보||', inline=False)
             embed.add_field(name = '!까모닝/!까브닝/!까나잇', value = '아침에는 까모닝, 낮에는 까브닝, 밤에는 까나잇이라고 인사해주세요', inline=False)
-            embed.add_field(name = '!오뱅알', value = '', inline=False)
+            embed.add_field(name = '!오뱅알', value = '?', inline=False)
             embed.add_field(name = '!선', value = '필요하다 싶으면 사용하시면 됩니다. ^^', inline=False)
             await message.channel.send(embed = embed)
             t11 = time.time()
