@@ -107,16 +107,15 @@ async def on_message(message):
         if now < t11 + cooldown:
             return None
         else:
-            embed = discord.Embed(title="까자봇 명령어", description="이거슨 명령어 목록이올시다.", color=0xaaf0d1)
-            embed.set_footer(text = '누가 쿨타임 좀 짜주세요 ㅠㅠ')
-            embed.add_field(name = '!트위치', value = '트위치 명령어 설명', inline=False)
-            embed.add_field(name = '!유튜브/!까튜브', value = '유튜브 명령어 설명', inline=False)
-            embed.add_field(name = '!트게더/!까게더', value = '트게더 명령어 설명', inline=False)
-            embed.add_field(name = '!키', value = '키 명령어 설명', inline=False)
-            embed.add_field(name = '!까바자보', value = '까바자보 명령어 설명', inline=False)
-            embed.add_field(name = '!까모닝/!까브닝/!까나잇', value = '까모닝 명령어 설명', inline=False)
-            embed.add_field(name = '!오뱅알', value = '오뱅알 명령어 설명', inline=False)
-            embed.add_field(name = '!선', value = '선 명령어 설명', inline=False)
+            embed = discord.Embed(title="!명령어", description="까자봇 명령어 목록이에요", color=0xaaf0d1)
+            embed.add_field(name = '!트위치', value = '까자님의 트위치 링크나 나와요', inline=False)
+            embed.add_field(name = '!유튜브/!까튜브', value = '까튜브의 링크가 나와요', inline=False)
+            embed.add_field(name = '!트게더/!까게더', value = '까게더의 링크가 나와요', inline=False)
+            embed.add_field(name = '!키', value = '까자님의 키가 궁금하시다면?', inline=False)
+            embed.add_field(name = '!까바자보', value = '||까바자보||', inline=False)
+            embed.add_field(name = '!까모닝/!까브닝/!까나잇', value = '아침에는 까모닝, 낮에는 까브닝, 밤에는 까나잇이라고 인사해주세요', inline=False)
+            embed.add_field(name = '!오뱅알', value = '', inline=False)
+            embed.add_field(name = '!선', value = '필요하다 싶으면 사용하시면 됩니다. ^^', inline=False)
             await message.channel.send(embed = embed)
             t11 = time.time()
 
