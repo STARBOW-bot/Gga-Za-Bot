@@ -107,7 +107,7 @@ async def on_message(message):
         if now < t11 + cooldown:
             return None
         else:
-            embed = discord.Embed(title="!명령어", description="까자봇 명령어 목록이에요", color=0xaaf0d1)
+            embed = discord.Embed(title="명령어", description="까자봇 명령어 목록이에요", color=0xaaf0d1)
             embed.add_field(name = '!트위치', value = '까자님의 트위치 링크나 나와요', inline=False)
             embed.add_field(name = '!유튜브/!까튜브', value = '까튜브의 링크가 나와요', inline=False)
             embed.add_field(name = '!트게더/!까게더', value = '까게더의 링크가 나와요', inline=False)
